@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pseudo and zindex</title>
+  <style>
+    .box {
+      width: 200px;
+      position: relative;
+    }
+    /* .boy{
+      position: relative;
+    } */
+    .ring{
+      top: -70px;
+      z-index: -1;
+    }
+    .water{
+      top: -160px;
+      z-index: -2;
+    }
+    h2::after{
+      content: '.pdf';
+      color: brown;
+      font-size: small;
+      background-color: yellow;
+    }
+    h2::before{
+      content: 'start- ';
+      color: cadetblue;
+      font-size: small;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="swim-container">
+    <div class="box boy">
+      <img src="swim/boy.svg" alt="">
+    </div>
+    <div class="box ring">
+      <img src="swim/ring.svg" alt="">
+    </div>
+    <div class="box water">
+      <img src="swim/water.svg" alt="">
+    </div>
+  </div>
+  <div>
+    <h2>Step - 1</h2>
+    <h2>Step - 2</h2>
+    <h2>Step - 3</h2>
+  </div>
+  <script>
+    alert('Welcome to my website')
+  </script>
+</body>
+
+</html>
